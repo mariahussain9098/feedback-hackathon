@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f7f6;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            max-width: 900px;
+            width: 100%;
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+            max-width: 900px;
+            max-height: 200px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .form-heading {
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 28px;
+            color: #333;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .rating input {
+            display: none;
+        }
+        .rating label {
+            font-size: 24px;
+            color: #ddd;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .rating input:checked ~ label {
+            color: #f5c518;
+        }
+        .rating label:hover,
+        .rating label:hover ~ label {
+            color: #f5c518;
+        }
+        .form-control {
+            border-radius: 8px;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            border-radius: 8px;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://media.gettyimages.com/id/1454847301/photo/customer-service-and-satisfaction-concept-business-people-are-touching-the-virtual-screen-on.jpg?s=612x612&w=0&k=20&c=bMDYLxgBN6T-5VAZgziUApMGXyWh8C0Tx1KsNgSoCLk=" alt="Feedback Header" class="header-image">
+        <div class="form-heading">We’d love to hear about your experience with this course!</div>
+        <!-- Elfsight Widget -->
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <div class="elfsight-app-33614786-c672-4d32-a348-209e55c4e147" data-elfsight-app-lazy></div>
+    </div>
+</body>
+</html>
